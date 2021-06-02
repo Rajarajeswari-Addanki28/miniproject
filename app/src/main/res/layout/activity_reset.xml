@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".resetActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FIND YOUR MATE"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"
+        android:textStyle="italic"
+        android:textColor="@color/teal_700"
+        android:id="@+id/title"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RESET PASSWORD"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/title"
+        android:textColor="@color/teal_200"
+        android:id="@+id/name2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username_reset"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/name2"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reset_password"
+        android:hint="New Password"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/username_reset"
+        android:drawableLeft="@drawable/ic_baseline_security"
+        android:drawablePadding="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reset_confirm"
+        android:hint="Confirm Password"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/reset_password"
+        android:drawablePadding="20dp"
+        android:drawableLeft="@drawable/ic_baseline_security"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reset"
+        android:text="RESET"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/reset_confirm"
+        android:backgroundTint="@color/teal_700"
+        />
+
+
+</RelativeLayout>

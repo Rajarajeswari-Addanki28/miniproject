@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".newuserActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FIND YOUR MATE"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:layout_marginTop="50dp"
+                android:textStyle="italic"
+                android:textColor="@color/teal_700"
+                android:id="@+id/title"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/username"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/title"
+                android:hint="EMAIL"
+                android:inputType="textEmailAddress"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/ic_baseline_email"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fullname"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/username"
+                android:hint="FullName"
+                android:inputType="textPersonName"
+                android:drawableLeft="@drawable/ic_baseline_person"
+                android:drawablePadding="20dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/number"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/fullname"
+                android:hint="Phone Number"
+             android:inputType="phone"
+                android:drawableLeft="@drawable/ic_baseline_phone_iphone"
+                android:drawablePadding="20dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/gender"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/number"
+                android:hint="GENDER: (Male /Female)"
+                android:inputType="text"
+                android:drawableLeft="@drawable/ic_baseline_wc"
+                android:drawablePadding="20dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/gender"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/ic_baseline_security"
+                android:drawablePadding="20dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/repassword"
+                android:layout_marginTop="50dp"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:layout_below="@+id/password"
+                android:drawableLeft="@drawable/ic_baseline_security"
+                android:drawablePadding="20dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CREATE"
+                android:id="@+id/create"
+                android:layout_below="@id/repassword"
+                android:layout_marginTop="50dp"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
